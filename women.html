@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <!-- Stylesheet css link -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body style="background: linear-gradient(rgb(239, 209, 250),rgb(230, 230, 252));">
+    <!-- ===========================Navbar======================= -->
+    <div class="container-fluid header">
+        <a href="#">Gift Cards</a>
+        <a href="#">Help Center</a>
+        <a href="#">Sell On This</a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background: rgb(128, 1, 1);color: rgb(203, 201, 201);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="women.html">Women</a>
+                    </li>
+                    <li>
+                        <a href="men.html">Men</a>
+                    </li>
+                    <li>
+                        <a href="Baby&Kids.html">Baby & Kids</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex">
+                            <input type="text" placeholder="Search" class="search-box">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-2xl"
+                                style="color: #fbb48e;"></i></a>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a href="$" type="button" data-bs-toggle="modal" id="sign-in-btn"
+                            data-bs-target="#staticBackdrop">Sign In <i class="fa-sharp fa-solid fa-user fa-2xl"
+                                style="color: #fdb38b;"></i></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content"
+                                    style="background: #FFE5AD; color:#0e4a07; font-family: serif,cursive; margin-top: 7rem;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="#"><i class="fa-solid fa-user fa-lg" style="color: #f3672b;"></i> Your
+                                            Account</a><br>
+                                        <a href="#"><i class="fa-solid fa-box fa-lg" style="color: #f3672b;"></i> Your
+                                            Order</a><br>
+                                        <a href="#"><i class="fa-solid fa-heart fa-lg" style="color: #f3672b;"></i>
+                                            Shortlists</a>
+                                        <form>
+                                            <h6>If you are a new user</h6>
+                                            <a href="">Register</a><br>
+                                            <input type="text/email" placeholder="Phone Number/Mail...">
+                                            <a href="#">Login</a><br>
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck"
+                                                checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label><br>
+                                            <!-- Simple link -->
+                                            <a href="#!"
+                                                style="color:#b38507;text-decoration: none; margin-left: 2rem;">Forgot
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background: #814d48; color: #fff;"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========================================Images Slider========================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="pesukod_snimkov" id="modulnay_slayder">
+        <div>
+            <img src="E-Commerce-Images/saree-1.png" width="100%" height="400px">
+        </div>
+        <div>
+            <img src="E-Commerce-Images/kurtasa-1.png" width="100%" height="400px">
+        </div>
+        <div>
+            <img src="E-Commerce-Images/evening.png" width="100%" height="400px">
+        </div>
+        <!-- The Arrows -->
+        <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z"></path>
+            </svg></i>
+        <i class="right" class="arrows" style="z-index:2; position:absolute;">
+            <svg viewBox="0 0 100 100">
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z"
+                    transform="translate(100, 100) rotate(180) "></path>
+            </svg></i>
+    </div>
+    </div>
+    <!-- ===============================Categories to bag================ -->
+
+    <div class="container-fluid mt-5">
+        <div class=" row women-cat">
+            <h2 class="cat-h2">Categories To Bag</h2>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/kurta-sets.png.png">
+                        <h5>Kurtas & Kurta Sets</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/sar.png">
+                        <h5>Saree</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/dresses.png">
+                        <h5>Dresses</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/heel.png">
+                        <h5>Flats & Heels</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/Bag.png">
+                        <h5>HandBags</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/shorts.png">
+                        <h5>Shorts</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/je.png">
+                        <h5>Jewellery</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/beauty.png">
+                        <h5>MakeUp</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/bo.png">
+                        <h5>Boots</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/T-Shirts.png">
+                        <h5>T-Shirts</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/women-shoes.png">
+                        <h5>Women Shoes</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="women-bg-circle">
+                    <a href="#"><img src="E-Commerce-Images/women-body-care.png">
+                        <h5>Women Body Care</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+        <!-- =========================Trending In Indian Wear================== -->
+        <div class="container-fluid">
+            <h2>Trending In Indian Wear</h2>
+            <div class=" row main">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/saree-2.png" />
+                        <div class="text">
+                            <h2>Saree</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/kurta-biba.png">
+                        <div class="text">
+                            <h2>Kurta Sets By BIBA</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/print-paradise.png">
+                        <div class="text">
+                            <h2>Print Paradise</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/summer-dresses.png">
+                        <div class="text">
+                            <h2>Summer Dresses</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/regal.png">
+                        <div class="text">
+                            <h2>Regal Mustard</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==============Trending In Western Wear========= -->
+        <div class="container-fluid">
+            <h2>Trending In Western Wear</h2>
+            <div class="row main">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/casual-outing.png" />
+                        <div class="text">
+                            <h2>Casual Outing</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Rayon-Casual.png">
+                        <div class="text">
+                            <h2>Rayon Casual</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/formal-suit.png">
+                        <div class="text">
+                            <h2>Formal Suit</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/semi-formal.png">
+                        <div class="text">
+                            <h2>Semi Formal</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/runwayin.png">
+                        <div class="text">
+                            <h2>RunWayIn</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==============Trending In Sports Wear========== -->
+        <div class="container-fluid">
+            <h2>Trending In Sports Wear</h2>
+            <div class="row main">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/runing-sports-shoes.png" />
+                        <div class="text">
+                            <h2>Sports Runing</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/spring.png">
+                        <div class="text">
+                            <h2>Spring Winter</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Sports-outfit.png">
+                        <div class="text">
+                            <h2>Sports Outfit</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Aerobics-Dress.png">
+                        <div class="text">
+                            <h2>Aerobics Dress</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Sport-Dresses.png">
+                        <div class="text">
+                            <h2>Sport Dress</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =================Trending In Accessories Wear========== -->
+        <div class="container-fluid">
+            <h2>Trending In Accessories Wear</h2>
+            <div class="row main">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Earing-Butterfly.png" />
+                        <div class="text">
+                            <h2>Earing-Butterfly</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/mangalsutra.png">
+                        <div class="text">
+                            <h2>Mangalsutra</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Bracelet-watch.png">
+                        <div class="text">
+                            <h2>Bracelet-Watch</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Best-of-imittire.png">
+                        <div class="text">
+                            <h2>Best Of Imittire</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Imitation-Jewellery.png">
+                        <div class="text">
+                            <h2>Imitation Jewelery</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ====================Trending In Footwear================ -->
+        <div class="container-fluid">
+            <h2>Trending In Footwear</h2>
+            <div class="row main">
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/everyday-classic.png" />
+                        <div class="text">
+                            <h2>Everyday Classics</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Printed-Sneakers.png">
+                        <div class="text">
+                            <h2>Printed Sneakers</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/colorblocked.png">
+                        <div class="text">
+                            <h2>Colorblocked Sneakers</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/Rocia.png">
+                        <div class="text">
+                            <h2>Footwear By Rocia</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="E-Commerce-Images/comfort-footwear.png">
+                        <div class="text">
+                            <h2>Comfort Footwears</h2>
+                            <a href="#">Add Card</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====================================Footer==================== -->
+        <footer style="margin-top: 5rem;">
+            <div class="container-fluid">
+                <div class="row" style="background: #1B6563;">
+                    <div class="col-md-3 column">
+                        <h4>ABOUT</h4>
+                        <ul>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 column">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="payments.html">Payments</a></li>
+                            <li><a href="shipping.html">Shipping</a></li>
+                            <li><a href="shipping.html">Cancellation & Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 column">
+                        <h4>CONSUMER POLICY</h4>
+                        <ul>
+                            <li><a href="">Return Policy</a></li>
+                            <li><a href="">Terms To Use</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 column">
+                        <h4>Registered Office Address:</h4>
+                    </div>
+                </div>
+                <div class=" row mt-2">
+                    <h4>Connect With Us</h4>
+                    <a href="" id="icon"><i class="fa-brands fa-facebook fa-2xl" style="color: #1c65e3;"></i></a>
+                    <a href="" id="icon"><i class="fa-brands fa-instagram fa-2xl" style="color: #f64013;"></i></a>
+                    <a href="" id="icon"><i class="fa-brands fa-twitter fa-2xl" style="color: #42f5c8;"></i></a>
+                    <!-- <a href="" id="icon"></a> -->
+                </div>
+            </div>
+        </footer>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            (function ($) {
+                "use strict";
+                $.fn.sliderResponsive = function (settings) {
+
+                    var set = $.extend(
+                        {
+                            slidePause: 5000,
+                            fadeSpeed: 800,
+                            autoPlay: "on",
+                            nugedsamArrows: "off",
+                            hideDots: "off",
+                            hoverZoom: "on",
+                            titleBarTop: "off"
+                        },
+                        settings
+                    );
+
+                    var $slider = $(this);
+                    var size = $slider.find("> div").length;
+                    var position = 0;
+                    var sliderIntervalID;
+
+                    $slider.append("<ul></ul>");
+                    $slider.find("> div").each(function () {
+                        $slider.find("> ul").append('<li></li>');
+                    });
+
+                    $slider.find("div:first-of-type").addClass("nugedsam");
+
+                    $slider.find("li:first-of-type").addClass("amilade-minab")
+
+                    $slider.find("> div").not(".nugedsam").fadeOut();
+
+                    if (set.autoPlay === "on") {
+                        startSlider();
+                    }
+
+                    if (set.nugedsamArrows === "on") {
+                        $slider.addClass('snavkenis');
+                    }
+
+                    if (set.hideDots === "on") {
+                        $slider.addClass('hideDots');
+                    }
+
+                    if (set.hoverZoom === "off") {
+                        $slider.addClass('hoverZoomOff');
+                    }
+
+                    if (set.titleBarTop === "on") {
+                        $slider.addClass('desamilopan');
+                    }
+
+                    function startSlider() {
+                        sliderIntervalID = setInterval(function () {
+                            nextSlide();
+                        }, set.slidePause);
+                    }
+
+                    $slider.mouseover(function () {
+                        if (set.autoPlay === "on") {
+                            clearInterval(sliderIntervalID);
+                        }
+                    });
+
+                    $slider.mouseout(function () {
+                        if (set.autoPlay === "on") {
+                            startSlider();
+                        }
+                    });
+
+                    $slider.find("> .right").click(nextSlide)
+
+                    $slider.find("> .left").click(prevSlide);
+
+                    function nextSlide() {
+                        position = $slider.find(".nugedsam").index() + 1;
+                        if (position > size - 1) position = 0;
+                        changeCarousel(position);
+                    }
+
+                    function prevSlide() {
+                        position = $slider.find(".nugedsam").index() - 1;
+                        if (position < 0) position = size - 1;
+                        changeCarousel(position);
+                    }
+
+                    $slider.find(" > ul > li").click(function () {
+                        position = $(this).index();
+                        changeCarousel($(this).index());
+                    });
+
+                    function changeCarousel() {
+                        $slider.find(".nugedsam").removeClass("nugedsam").fadeOut();
+                        $slider
+                            .find("> div")
+                            .eq(position)
+                            .fadeIn(set.fadeSpeed)
+                            .addClass("nugedsam");
+                        // The Dots
+                        $slider.find("> ul").find(".amilade-minab").removeClass("amilade-minab");
+                        $slider.find("> ul > li").eq(position).addClass("amilade-minab");
+                    }
+
+                    return $slider;
+                };
+            })(jQuery);
+
+            $(document).ready(function () {
+                $("#modulnay_slayder").sliderResponsive({
+                    hoverZoom: "off",
+                    hideDots: "on"
+                });
+
+            });
+        </script>
+</body>
+
+</html>

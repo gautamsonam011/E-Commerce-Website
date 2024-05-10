@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <!-- Stylesheet css link -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+<body style="background: linear-gradient(rgb(249, 242, 210),rgb(252, 255, 232));">
+    <!-- ===========================Navbar======================= -->
+    <div class="container-fluid header">
+        <a href="#">Gift Cards</a>
+        <a href="#">Help Center</a>
+        <a href="#">Sell On This</a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background: rgb(128, 1, 1);color: rgb(203, 201, 201);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="women.html">Women</a>
+                    </li>
+                    <li>
+                        <a href="men.html">Men</a>
+                    </li>
+                    <li>
+                        <a href="Baby&Kids.html">Baby & Kids</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex">
+                            <input type="text" placeholder="Search" class="search-box">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-2xl" style="color: #fbb48e;"></i></a>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a href="$" type="button" data-bs-toggle="modal" id="sign-in-btn"
+                            data-bs-target="#staticBackdrop">Sign In <i class="fa-sharp fa-solid fa-user fa-2xl"
+                                style="color: #fdb38b;"></i></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content"
+                                    style="background: #FFE5AD; color:#0e4a07; font-family: serif,cursive; margin-top: 7rem;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="#"><i class="fa-solid fa-user fa-lg" style="color: #f3672b;"></i> Your
+                                            Account</a><br>
+                                        <a href="#"><i class="fa-solid fa-box fa-lg" style="color: #f3672b;"></i> Your
+                                            Order</a><br>
+                                        <a href="#"><i class="fa-solid fa-heart fa-lg" style="color: #f3672b;"></i>
+                                            Shortlists</a>
+                                        <form>
+                                            <h6>If you are a new user</h6>
+                                            <a href="">Register</a><br>
+                                            <input type="text/email" placeholder="Phone Number/Mail...">
+                                            <a href="#">Login</a><br>
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck"
+                                                checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label><br>
+                                            <!-- Simple link -->
+                                            <a href="#!"
+                                                style="color:#b38507;text-decoration: none; margin-left: 2rem;">Forgot
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background: #814d48; color: #fff;"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ========================slider================ -->
+    <div class="container-fluid slider-1">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="grid" id="grid">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="E-Commerce-Images/ban-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="E-Commerce-Images/ban-2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="E-Commerce-Images/ban-3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="E-Commerce-Images/ban-4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="E-Commerce-Images/ban-5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="E-Commerce-Images/ban-6.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 content-1">
+                <h2>Sales On Top Brands</h2>
+                <p>New Launch<br>Up To 50% OFF</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================Biggest deals on top brands==================== -->
+    <div class="container-fluid biggest-deal">
+        <h2 class="cat-h2">The Biggest Deals On Top Brands</h2>
+        <ul style="column-count: 5;">
+            <li><a href="#"><img src="E-Commerce-Images/HM.png">
+                    <h5>30%-60% OFF</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/Tesco.png">
+                    <h5>Min. 40% OFF</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/Levi's.png">
+                    <h5>50% OFF</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/adidass.png">
+                    <h5>30%-70% OFF</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/puma.png">
+                    <h5>60% OFF</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- ===========================categories==================== -->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Categories To Bag</h2>
+        <ul class="Trending-India-categories">
+            <li><a href="#"><img src="E-Commerce-Images/shirt-men.png">
+                    <h5>Shirt</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/t-shirt-men.png">
+                    <h5>T-Shirt</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/jeans-men.png">
+                    <h5>Jeans</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/casual-men.png">
+                <h5>Shorts & Trousers</h5></a></li>
+            <li><a href="#"><img src="E-Commerce-Images/men-casualshoes.png">
+                    <h5>Casual Shoes</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/products-men.png">
+                    <h5>Infant Essentials</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- ===========================Explore Top Brands==================== -->
+    <!-- <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Explore Top Brands</h2>
+        <ul class="Trending-India-Men">
+            <li><a href="#"><img src="E-Commerce-Images/">
+                    <h5></h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/">
+                    <h5></h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/">
+                    <h5></h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/">
+                    <h5></h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/">
+                    <h5></h5>
+                </a></li>
+        </ul>
+    </div> -->
+    <!-- ===========================TRENDING IN INDIAN WEAR==================== -->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Trending In Indian Wear</h2>
+        <ul class="Trending-India-wear">
+            <li><a href="#"><img src="E-Commerce-Images/mens-sherwani-with-shawl.jpg">
+                    <h5>Sherwani With Shawal</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/Asymmetric-Cotton-Kurta.png.jpeg">
+                    <h5>Asymmetric Cotton Kurta</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/MLP_Hero_B2.avif">
+                    <h5>Indian Suit</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/indian-wedding-dress-for-groom.jpeg">
+                    <h5>Indian Wedding Dress</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/indo-western-suit.png">
+                    <h5>Indo Western Suit</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- ===========================TRENDING IN sports WEAR==================== -->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Trending In Sports Wear</h2>
+        <ul class="Trending-India-wear">
+            <li><a href="#"><img src="E-Commerce-Images/super-poly-tracksuit.webp">
+                    <h5>Super Poly Tracksuit</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/g1sbi_256.webp">
+                    <h5>Best Gym Wear</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/POPULAR-SPORTSWEAR.jpg">
+                    <h5>Popular Sport Wear</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/really-affordable-gym-wear.jpg">
+                    <h5>Really Affordable Gym Wear</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/tanks-gymwear-wolfit.jpg">
+                    <h5>Tanks Gymwear Wolfit</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- ===========================TRENDING IN footwear WEAR==================== -->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Trending In Footwears Wear</h2>
+        <ul class="Trending-India-wear">
+            <li><a href="#"><img src="E-Commerce-Images/Stylish-Sneakers.webp">
+                    <h5>Stylish Sports Sneakers</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/Blue-Casual.webp">
+                    <h5>Blue Casual Shoe</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/MePartywear.webp">
+                    <h5>Men Party Wear</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/aterial.webp">
+                    <h5>Outer Material Party Wear</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/men-ethnic.jpg">
+                    <h5>Ethnic Shoes for Mens</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- ===========================TRENDING IN ACCESSORIESWEAR==================== -->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <h2 class="cat-h2">Trending In Accessories Wear</h2>
+        <ul class="accessory">
+            <li><a href="#"><img src="E-Commerce-Images/smart-watch.png">
+                    <h5>Smart Watch</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/fossil.png">
+                    <h5>Fossil Watches for Men</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/olevs-mens-gold.png" width="150px" height="200px">
+                    <h5>OLEVS Mens Gold Watche</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/sport-headband.png">
+                    <h5>Sports Headhand</h5>
+                </a></li>
+            <li><a href="#"><img src="E-Commerce-Images/Men-bracelet.png">
+                    <h5>Men Bracelet</h5>
+                </a></li>
+        </ul>
+    </div>
+    <!-- =====================================Footer==================== -->
+    <footer style="margin-top: 5rem;">
+        <div class="container-fluid">
+            <div class="row" style="background: #1B6563;">
+                <div class="col-md-3 column">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="shipping.html">Cancellation & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>CONSUMER POLICY</h4>
+                    <ul>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Terms To Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>Registered Office Address:</h4>
+                </div>
+            </div>
+            <div class=" row mt-2">
+                <h4>Connect With Us</h4>
+                <a href="" id="icon"><i class="fa-brands fa-facebook fa-2xl" style="color: #1c65e3;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-instagram fa-2xl" style="color: #f64013;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-twitter fa-2xl" style="color: #42f5c8;"></i></a>
+                <!-- <a href="" id="icon"></a> -->
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

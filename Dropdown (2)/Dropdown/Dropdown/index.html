@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  li .text{
+    margin-left: 0px;
+    
+  }
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: red;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+    </style>
+</head>
+
+<body>
+  <nav role="navigation">
+  <ul>
+    <li>
+    <li><a href="#">Internationals</a>
+    <ul class="dropdown">
+        <li><a href="#">Nature</a>
+        <ul class="dropdown" style="margin-top: -20px;">
+        <li class="text"><a href="#">Himachal Pradesh </a></li>
+        <li class="text"><a href="#">Uttarakhand </a> </li>
+        <li class="text"><a href="#">Ladakh </a></li>
+        <li class="text"><a href="#">Jammu & Kashmir </a></li>
+        <li class="text"><a href="#">Meghalaya </a></li>
+        <li class="text"><a href="#">Assam </a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+        <li><a href="#">Adventure</a>
+        <ul class="dropdown">
+          <li><a href="#">Adventure</a>
+          <ul class="dropdown" style="margin-top: -20px;">
+          <li class="text"><a href="#">Himachal Pradesh </a></li>
+          <li class="text"><a href="#">Uttarakhand </a> </li>
+          <li class="text"><a href="#">Ladakh </a></li>
+          <li class="text"><a href="#">Jammu & Kashmir </a></li>
+          <li class="text"><a href="#">Meghalaya </a></li>
+          <li class="text"><a href="#">Assam </a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+        <li><a href="#">Yatra</a>
+          <ul class="dropdown">
+          <li><a href="#">Adventure</a>
+          <ul class="dropdown" style="margin-top: -20px;">
+          <li class="text"><a href="#">Himachal Pradesh </a></li>
+          <li class="text"><a href="#">Uttarakhand </a> </li>
+          <li class="text"><a href="#">Ladakh </a></li>
+          <li class="text"><a href="#">Jammu & Kashmir </a></li>
+          <li class="text"><a href="#">Meghalaya </a></li>
+          <li class="text"><a href="#">Assam </a></li>
+          </ul>
+        </li>
+      </ul>
+        </li>
+
+
+        <li><a href="#">All Time Favorites</a>
+          <ul class="dropdown">
+          <li><a href="#">Adventure</a>
+          <ul class="dropdown" style="margin-top: -20px;">
+          <li class="text"><a href="#"> New Delhi </a></li>
+          <li class="text"><a href="#">Punjab </a> </li>
+          <li class="text"><a href="#">Ladakh </a></li>
+          <li class="text"><a href="#">Jammu & Kashmir </a></li>
+          <li class="text"><a href="#">Meghalaya </a></li>
+          <li class="text"><a href="#">Assam </a></li>
+          </ul>
+        </li>
+      </ul>
+        </li>
+</li>
+</ul>
+</nav>
+</body>
+</html>

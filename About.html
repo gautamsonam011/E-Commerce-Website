@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Stylesheet css link -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body style="background: linear-gradient(rgb(240, 202, 254),rgb(221, 221, 250));">
+    <!-- ===========================Navbar======================= -->
+    <div class="container-fluid header">
+        <a href="#">Gift Cards</a>
+        <a href="#">Help Center</a>
+        <a href="#">Sell On This</a>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background: rgb(128, 1, 1);color: rgb(203, 201, 201);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="women.html">Women</a>
+                    </li>
+                    <li>
+                        <a href="men.html">Men</a>
+                    </li>
+                    <li>
+                        <a href="Baby&Kids.html">Baby & Kids</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex">
+                            <input type="text" placeholder="Search" class="search-box">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-2xl"
+                                style="color: #fbb48e;"></i></a>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a href="$" type="button" data-bs-toggle="modal" id="sign-in-btn"
+                            data-bs-target="#staticBackdrop">Sign In <i class="fa-sharp fa-solid fa-user fa-2xl"
+                                style="color: #fdb38b;"></i></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content"
+                                    style="background: #FFE5AD; color:#0e4a07; font-family: serif,cursive; margin-top: 7rem;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="#"><i class="fa-solid fa-user fa-lg" style="color: #f3672b;"></i> Your
+                                            Account</a><br>
+                                        <a href="#"><i class="fa-solid fa-box fa-lg" style="color: #f3672b;"></i> Your
+                                            Order</a><br>
+                                        <a href="#"><i class="fa-solid fa-heart fa-lg" style="color: #f3672b;"></i>
+                                            Shortlists</a>
+                                        <form>
+                                            <h6>If you are a new user</h6>
+                                            <a href="">Register</a><br>
+                                            <input type="text/email" placeholder="Phone Number/Mail...">
+                                            <a href="#">Login</a><br>
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck"
+                                                checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label><br>
+                                            <!-- Simple link -->
+                                            <a href="#!"
+                                                style="color:#b38507;text-decoration: none; margin-left: 2rem;">Forgot
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background: #814d48; color: #fff;"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========================================Images Slider========================== -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="E-Commerce-Images/Banner-1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="E-Commerce-Images/Banner-2.png" class="d-block w-100">
+
+            </div>
+            <div class="carousel-item">
+                <img src="E-Commerce-Images/Banner-3.png" class="d-block w-100" height="390px">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ========================About============== -->
+    <div class="container mt-5">
+        <h3 class="cat-h2 text-center">About</h3>
+            <p>It is the leading platform for global wholesale trade. We serve millions of buyers and suppliers around the world.
+                Much like a traditional physical retail store, e-commerce websites allow consumers and businesses to buy and sell to one another on a designated platform. The main difference between e-commerce and physical commerce, however, is that e-commerce transactions occur entirely over the internet rather than at a brick-and-mortar location.
+            </p>
+    </div>
+    <!-- ==============Our Mission================== -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="header-wrapper">
+                    <div class="zoominheader">
+                      <div class="zoomoutheader">
+                        <img id="about-img" src="E-Commerce-Images/our-mission.png" width="100%">
+                      </div>
+                    </div>
+                </div>
+                <!-- <img id="about-img" src="E-Commerce-Images/our-mission.png" width="100%" style="border-radius: 10px;clip-path: polygon(100% 62%, 100% 50%, 100% 48%, 0 100%, 7% 49%, 0% 0%);"> -->
+            </div>
+            <div class="col-md-7">
+                <h3 class="cat-h2 text-center">Our Mission</h3>
+                <p>A company's mission statement should clearly define your brand's purpose, core function, and goals.</p>
+                <p>As part of the Group, our mission is to make it easy to do business anywhere.</p>
+                <p>We do this by giving suppliers the tools necessary to reach a global audience for their products, and by helping buyers find products and suppliers quickly and efficiently.</p>
+            </div>
+        </div>
+    </div>
+    <!-- =====================One-Stop Sourcing============== -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="cat-h2 text-center">One Stop Sourcing</h3>
+                <p>It brings you hundreds of millions of products in over 40 different major categories, including consumer electronics, machinery and apparel.</p>
+                <p>Buyers for these products are located in 190+ countries and regions, and exchange hundreds of thousands of messages with suppliers on the platform each day.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="header-wrapper">
+                    <div class="zoominheader">
+                      <div class="zoomoutheader">
+                        <img id="about-img" src="E-Commerce-Images/Best-designer.png" width="100%">
+                      </div>
+                    </div>
+                </div>
+                <!-- <img id="about-img" src="E-Commerce-Images/Best-designer.png" width="100%"> -->
+            </div>
+        </div>
+    </div>
+    <!-- ====================Anytime, Anywhere=========== -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="header-wrapper">
+                    <div class="zoominheader">
+                      <div class="zoomoutheader">
+                        <img id="about-img" src="E-Commerce-Images/anything.png" width="100%">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="cat-h2 text-center">Anything, Anywhere</h3>
+                <p>As a platform, we continue to develop services to help businesses do more and discover new opportunities.</p>
+                <p>Whether it’s sourcing from your mobile phone or contacting suppliers in their local language, turn to Alibaba.com for all your global business needs.</p>
+            </div>
+        </div>
+    </div>
+    <!-- =====================================Footer==================== -->
+    <footer style="margin-top: 5rem;">
+        <div class="container-fluid">
+            <div class="row" style="background: #1B6563;">
+                <div class="col-md-3 column">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="shipping.html">Cancellation & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>CONSUMER POLICY</h4>
+                    <ul>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Terms To Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>Registered Office Address:</h4>
+                </div>
+            </div>
+            <div class=" row mt-2">
+                <h4>Connect With Us</h4>
+                <a href="" id="icon"><i class="fa-brands fa-facebook fa-2xl" style="color: #1c65e3;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-instagram fa-2xl" style="color: #f64013;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-twitter fa-2xl" style="color: #42f5c8;"></i></a>
+                <!-- <a href="" id="icon"></a> -->
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

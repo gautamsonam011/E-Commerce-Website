@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jingle Holiday Bazar</title>
+    <link rel="icon" type="image/x-icon" href="images/mainlogo.gif" style="    border-radius: 600px;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="travel.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards_item {
+            display: flex;
+            padding: 1rem;
+        }
+
+        .card_image {
+            position: relative;
+            max-height: 250px;
+        }
+
+        .card_image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card_price {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 54px;
+            height: 25px;
+            border-radius: 0.25rem;
+            background-color: #c89b3f;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .card_price span {
+            font-size: 12px;
+            margin-top: -2px;
+        }
+
+        .note {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 0.25rem;
+            background-color: #c89b3f;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        @media (min-width: 40rem) {
+            .cards_item {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 56rem) {
+            .cards_item {
+                width: 33.3333%;
+            }
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card_content {
+            position: relative;
+            padding: 6px 12px 32px 24px;
+            margin: 16px 8px 8px 0;
+            /*max-height: 290px;*/
+            /*max-height: 325px;*/
+            max-height: 345px;
+            /*overflow-y: scroll;*/
+        }
+
+        .card_content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .card_content::-webkit-scrollbar-track {
+            box-shadow: 0;
+            border-radius: 0;
+        }
+
+        .card_content::-webkit-scrollbar-thumb {
+            background: #c89b3f;
+            border-radius: 15px;
+        }
+
+        .card_title {
+            position: relative;
+            /*margin: 0 0 19px;*/
+            margin: 0 0 7px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card_title::after {
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #c89b3f;
+            content: "";
+        }
+
+        hr {
+            margin: 24px auto;
+            width: 50px;
+            border-top: 2px solid #c89b3f;
+        }
+
+        .card_text p {
+            margin: 0 0 24px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card_text p:last-child {
+            margin: 0;
+        }
+
+
+
+
+        /* ============================================================================= */
+        body {
+            background-color: #d6cbcb;
+        }
+
+        #bar-list {
+            height: 100px;
+            left: 82%;
+            margin: -30px 0 0 -20px;
+            position: absolute;
+            top: 95%;
+            width: 70px;
+        }
+
+        .bar1 {
+  
+            background: orangered;
+            bottom: 1px;
+            height: 100px;
+            position: absolute;
+            width: 20px;
+            animation: sound 600ms 0ms linear infinite alternate;
+        }
+
+        .bar2 {
+
+            background: wheat;
+            bottom: 1px;
+            height: 100px;
+            position: absolute;
+            width: 20px;
+            margin-left: 15px;
+            animation: sound 700ms 0ms linear infinite alternate;
+        }
+
+        .bar3 {
+
+            background: #159c06;
+            bottom: 1px;
+            height: 100px;
+            position: absolute;
+            width: 20px;
+            margin-left: 30px;
+            animation: sound 800ms 0ms linear infinite alternate;
+        }
+
+        @keyframes sound {
+            0% {
+                opacity: .50;
+                height: 1px;
+            }
+
+            100% {
+                opacity: 1;
+                height: 100px;
+            }
+        }
+
+        .bar1:nth-child(1) {
+            left: 5px;
+            animation-duration: 400ms;
+        }
+
+        .bar2:nth-child(2) {
+            left: 10px;
+            animation-duration: 500ms;
+        }
+
+        .bar3:nth-child(3) {
+            left: 15px;
+            animation-duration: 600ms;
+        }
+
+        @media screen and (max-width:320px) {
+            #bar-list{
+                top:100%;
+                left: 80%;
+            }
+        }
+        @media screen and (max-width:425px) {
+            #bar-list{
+                top:70%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            #bar-list{
+                top:85%;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            #bar-list{
+                top:80%;
+            }
+        }
+        @media screen and (max-width:1440px) {
+            #bar-list{
+                top:80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/jingle-holiday-bazar-delhi-tour-package.png" />
+                        <span class="card_price"><span>Mar&nbsp;</span>9</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Delhi Capital of India</h2>
+                        <div class="card_text">
+                            <p>New Delhi, situated in the northern region of India, is the country's capital city and
+                                home to a population of more than 21 million people. The city is renowned for its rich
+                                historical heritage, diverse culture, and culinary delights, and serves as an essential
+                                center for politics, education, and commerce within the country.</p>
+                            <button type="button" class="btn btn-outline-success btn-sm"><a
+                                    href="Delhi-Tour-Packages.php">Read More</a></button>
+                        </div>
+                        </div>
+
+                        <div id="bar-list">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+
+
+                    
+                </div>
+            </li>
+
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <span class="note">New</span>
+                        <img src="img/jingle-holiday-bazar-himachal-pradesh-tour-package.png" />
+                        <span class="card_price"><span>Mar&nbsp;</span>10</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Himachal Pradesh Tour</h2>
+                        <div class="card_text">
+                            <p>Himachal Pradesh is located in northern India and is famous for its stunning mountain
+                                landscapes, rich flora and fauna, and scenic beauty. The state capital is Shimla, and
+                                other major cities include Manali, Dharamshala, and Solan. Tourists are drawn to this
+                                state for adventure activities such as trekking, mountaineering, and skiing.</p>
+                            <button type="button" class="btn btn-outline-success btn-sm"><a
+                                    href="Himachal-Tour-Packages.php">Read More</a></button>
+                        </div>
+                    </div>
+
+
+                    <div id="bar-list">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <span class="note">Latest</span>
+                        <img src="img/jingle-holiday-bazar-uttarakhand-tour-package.png" />
+                        <span class="card_price"><span>Mar&nbsp;</span>16</span>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Uttarakhand</h2>
+                        <div class="card_text">
+                            <p>Uttarakhand is a beautiful state located in the northern part of India. It is commonly
+                                referred to as the "Land of Gods" due to its numerous pilgrimage sites, including the
+                                renowned Kedarnath and Badrinath temples. Apart from its spiritual significance,
+                                Uttarakhand is also known for its breathtaking natural beauty, with popular tourist
+                                destinations like Nainital and Mussoorie hill stations, and the holy city of Haridwar.
+                            </p>
+                            <button type="button" class="btn btn-outline-success btn-sm"><a
+                                    href="Uttarakhand-Tour-Packages.php">Read Blog</a></button>
+                        </div>
+                    </div>
+
+                    <div id="bar-list">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- ================================Blog content 2==================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div id="bar-list">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div> -->
+
+</body>
+
+</html>

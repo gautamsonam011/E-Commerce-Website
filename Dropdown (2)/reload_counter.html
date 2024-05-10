@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Counter</title>
+</head>
+<style>
+    body {
+        background: whitesmoke;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        width:350px;
+        height: 400px;
+        display: grid;
+        background-color: coral;
+    }
+    h1{
+        text-align: center;
+      font-family: serif;
+      color: #f0e8fb;  
+    }
+
+    #number_up,
+    #number_down {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #f0e8fb;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Counter</h1>
+        <div id="number_up"></div>
+      </div>
+    <script>
+        var finalValue = 1000;
+        var startValue = 0;
+        var time;
+        var x;
+        var numString = '';
+        var valueLength = finalValue.toString().length;
+        for (var i = 10; i < valueLength; i++) {
+            numString += '1';
+        }
+        x = Number(numString);
+        function upValue() {
+            if (startValue <= finalValue) {
+                setTimeout(function () {
+                    document.getElementById('number_up').innerText = startValue;
+                    if (x > 0) {
+                        startValue = startValue + x;
+                        time = 1;
+                    } else {
+                        startValue = startValue + 1;
+                        time = 5;
+                    }
+                    upValue();
+                }, time);
+            } else {
+                setTimeout(function () {
+                    document.getElementById('number_up').innerText = finalValue;
+                }, time);
+            }
+        }
+        upValue();
+    </script>
+</body>
+
+</html>

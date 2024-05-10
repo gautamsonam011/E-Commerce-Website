@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myInternational ul {
+            list-style: none;
+        }
+
+        #myInternational ul li a {
+            text-decoration: none;
+        }
+
+        #myInternational,
+        #oneInternational,
+        #twoInternational,
+        #threeInternational,
+        #fourInternational {
+            display: none;
+        }
+
+        #myInternational li a,
+        #oneInternational li a,
+        #twoInternational li a,
+        #threeInternational li a,
+        #fourInternational li a {
+            color: #2c5542;
+            font-family: serif;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 1rem;
+        }
+
+        .heading-line a {
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .container-dropdown {
+            position: absolute;
+            background-color: #fba6a6;
+            width: 180px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <li class="nav-item nav-link"><a onclick="toggleSection('myInternational')">Internationals</a>
+            <div class=" container-dropdown">
+                <div id="myInternational">
+                    <div onclick="toggleSection('oneInternational')" class="nav-link nav-one">Nature</div>
+                    <ul id="oneInternational">
+                        <li><a href="#">Himachal Pradesh</a></li>
+                        <li><a href="#">Uttarakhand</a></li>
+                        <li><a href="#">Ladakh</a></li>
+                        <li><a href="#">Jammu & Kashmir</a></li>
+                        <li><a href="#">Meghalaya</a></li>
+                        <li><a href="#">Assam</a></li>
+                    </ul>
+                    <div onclick="toggleSection('twoInternational')" class="nav-link nav-two">Adventure</div>
+                    <ul id="twoInternational">
+                        <li><a href="#">Rajasthan</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Goa</a></li>
+                        <li><a href="#">Karnataka</a></li>
+                        <li><a href="#">North East India</a></li>
+                    </ul>
+                    <div onclick="toggleSection('threeInternational')" class="nav-link nav-three">Yatra</div>
+                    <ul id="threeInternational">
+                        <li><a href="#">Vaishno Devi</a></li>
+                        <li><a href="#">Kedarnath</a></li>
+                        <li><a href="#">Badrinath</a></li>
+                        <li><a href="#">Char Dham</a></li>
+                        <li><a href="#">Ramayana</a></li>
+                        <li><a href="#">9 Devi Yatra</a></li>
+                    </ul>
+                    <div onclick="toggleSection('fourInternational')" class="nav-link nav-four">All Time Favorites</div>
+                    <ul id="fourInternational">
+                        <li><a href="#">New Delhi</a></li>
+                        <li><a href="#">Punjab</a></li>
+                        <li><a href="#">Haryana</a></li>
+                        <li><a href="#">Gujarat</a></li>
+                        <li><a href="#">Uttar Pradesh</a></li>
+                        <li><a href="#">Madhya Pradesh</a></li>
+                        <li><a href="#">West Bengal</a></li>
+                        <li><a href="#">NORTH</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var x = document.getElementById(sectionId);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                hideOtherSections(sectionId);
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function hideOtherSections(activeSectionId) {
+            var sections = ["oneInternational", "twoInternational", "threeInternational", "fourInternational"];
+            var attributes = ["nav-one" ,"nav-two", "nav-three", "nav-four"];
+            for (var i = 0; i < sections.length; i++) {
+                if (sections[i] !== activeSectionId) {
+                    var x = document.getElementById(sections[i]);
+                    x.style.display = "none";
+                }
+
+                // if (sections.length !== attributes.length ){
+                //     var y = document.getElementsByClassName(attributes[i]);
+                //     y.style.display = "none";
+                // }
+            }
+        }
+
+        // function hideOhterAttributes(activeSectionClass) {
+        //     var attributes = ["nav-one" ,"nav-two", "nav-three", "nav-four"]
+        //     for (var i = 0; i<attributes.length; i++){
+        //         if (sections.length!== attributes.length ){
+                    
+        //             var y = document.getElementsByClassName(attributes[i]);
+        //             y.style.display = "none";
+        //         }
+        //     }
+        // }
+    </script>
+
+
+</body>
+
+</html>

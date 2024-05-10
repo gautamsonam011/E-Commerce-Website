@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Cart</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Bree Serif', serif;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container shadow">
+        <h2 class="text-center mt-5">Shopping Cart</h2>
+        <header class="shadow">
+            <div class="row justify-content-center">
+                <div class="col-md-2"><p>Product</p></div>
+                <div class="col-md-2"><p>Name</p></div>
+                <div class="col-md-2"><p>Quantity</p></div>
+                <div class="col-md-3"><p>Price</p></div>
+                <div class="col-md-3"><p class="mx-5">Amount</p></div>
+            </div>
+        </header>
+        <main>
+            <div class="row justify-content-center">
+                <div class="col-md-2"><img src="./E-Commerce-Images/Earing-Butterfly.png" class="w-100 mb-3" height="100px"></div>
+                <div class="col-md-2">
+                    <p class="mt-5">Earing-Butterfly</p>
+
+                </div>
+                <div class="col-md-2">
+                    <ul class="pagination mt-5">
+                        <li class="page-item"><button class="page-link btn decrease">Pre</button></li>
+                        <li class="page-item "><a class="page-link" value="1" id="num">0</a></li>
+                        <li class="page-item"><button class="page-link btn increase" >Nex</button></li>
+                      </ul>
+                </div>
+                <div class="col-md-3"><p  class="mt-5"value="1" id="price">500.0 Rs</p></div>
+                <div class="col-md-3"><p  class="mt-5 mx-5"value="1" id="price">500.0 Rs</p></div>
+            </div>
+
+            <!-- second items  -->
+            <div class="row justify-content-center">
+                <div class="col-md-2"><img src="./E-Commerce-Images/Earing-Butterfly.png" class="w-100 mb-3" height="100px"></div>
+                <div class="col-md-2">
+                    <p class="mt-5">Earing-Butterfly</p>
+
+                </div>
+                <div class="col-md-2">
+                    <ul class="pagination mt-5">
+                        <li class="page-item"><button class="page-link btn1 decrease">Pre</button></li>
+                        <li class="page-item "><a class="page-link" value="1" id="num1">0</a></li>
+                        <li class="page-item"><button class="page-link btn1 increase" >Nex</button></li>
+                      </ul>
+                </div>
+                <div class="col-md-3"><p  class="mt-5"value="1">500.0 Rs</p></div>
+                <div class="col-md-3"><p  class="mt-5 mx-5"value="1">500.0 Rs</p></div>
+            </div>
+        </main>
+        <button class="form-control bg-danger text-white">Check Out</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <script>
+        let count = 0;
+        const value = document.querySelector("#num");
+        const btns = document.querySelectorAll(".btn");
+       
+
+        btns.forEach(function (btn) {
+            btn.addEventListener("click", function (e) {
+                const styles = e.currentTarget.classList;
+                if (styles.contains("decrease")) {
+                    count--;
+                } else if (styles.contains("increase")) {
+                    count++;
+                } else {
+                    count = 0;
+                }
+
+                if (count > 0) {
+                    value.style.color = "green";
+                }
+                if (count < 0) {
+                    value.style.color = "red";
+                }
+                if (count === 0) {
+                    value.style.color = "yellow";
+                }
+                value.textContent = count;
+            })
+        })
+
+
+        let count1 = 0;
+        const value1 = document.querySelector("#num1");
+        const btns1 = document.querySelectorAll(".btn1");
+
+        btns1.forEach(function (btn1) {
+            btn1.addEventListener("click", function (e) {
+                const styles = e.currentTarget.classList;
+                if (styles.contains("decrease")) {
+                    count--;
+                } else if (styles.contains("increase")) {
+                    count++;
+                } else {
+                    count = 0;
+                }
+
+                if (count > 0) {
+                    value1.style.color = "green";
+                }
+                if (count < 0) {
+                    value1.style.color = "red";
+                }
+                if (count === 0) {
+                    value1.style.color = "yellow";
+                }
+                value1.textContent = count;
+            })
+        })
+    </script>
+</body>
+</html>

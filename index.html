@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <!-- Stylesheet css link -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="body">
+    <!-- ===========================Navbar======================= -->
+    <div class="container-fluid header">
+
+        <a href="#">Gift Cards</a>
+        <a href="#">Help Center</a>
+        <a href="#">Sell On This</a>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background: rgb(128, 1, 1);color: rgb(203, 201, 201);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="women.html">Women</a>
+                    </li>
+                    <li>
+                        <a href="men.html">Men</a>
+                    </li>
+                    <li>
+                        <a href="Baby&Kids.html">Baby & Kids</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex">
+                            <input type="text" placeholder="Search" class="search-box">
+                            <button class="btn-search">Search</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-2xl" style="color: #fbb48e;"></i></a> 
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <a href="$" type="button" data-bs-toggle="modal" id="sign-in-btn"
+                            data-bs-target="#staticBackdrop">Sign In <i class="fa-sharp fa-solid fa-user fa-2xl"
+                                style="color: #fdb38b;"></i></a>
+                                
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content"
+                                    style="background: #FFE5AD; color:#0e4a07; font-family: serif,cursive; margin-top: 7rem;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="#"><i class="fa-solid fa-user fa-lg" style="color: #f3672b;"></i> Your
+                                            Account</a><br>
+                                        <a href="#"><i class="fa-solid fa-box fa-lg" style="color: #f3672b;"></i> Your
+                                            Order</a><br>
+                                        <a href="#"><i class="fa-solid fa-heart fa-lg" style="color: #f3672b;"></i>
+                                            Shortlists</a>
+                                        <form>
+                                            <h6>If you are a new user</h6>
+                                            <a href="">Register</a><br>
+                                            <input type="text/email" placeholder="Phone Number/Mail...">
+                                            <a href="#">Login</a><br>
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck"
+                                                checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label><br>
+                                            <!-- Simple link -->
+                                            <a href="#!"
+                                                style="color:#b38507;text-decoration: none; margin-left: 2rem;">Forgot
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background: #814d48; color: #fff;"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========================================Images Slider========================== -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="E-Commerce-Images/sale.png" class="d-block w-100" height="400px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="E-Commerce-Images/PC_Hero_VG-Product.png" class="d-block w-100" height="400px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="E-Commerce-Images/SkincareProduct.png" class="d-block w-100" alt="..." height="400px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ===================Product=================== -->
+    <main>
+        <!-- ======================================= -->
+        <section>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/RiderHelmets.png" width="181px" height="200px">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Rider Helmets</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/Rideons.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Tricycles & Rideons</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/Treadmill.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Treadmill, Exercise Bikes and more</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/SoftToys.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Soft Toys</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/stationery.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Top Selling Stationery</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/foodspreads.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Food Spreads</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/nokia-air.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Seven</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/goun.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Eight</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/shoes-2.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Nine</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/heels.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Ten</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/jacket.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Eleven</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+            <div class="product">
+                <picture>
+                    <img src="E-Commerce-Images/shoes.png" alt="">
+                </picture>
+                <div class="detail">
+                    <p>
+                        <b>Product Twelve</b><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <p class="star">
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                        <strong>&star;</strong>
+                    </p>
+                    <a href="#" class="add-card-a">Add-cart</a>
+                </div>
+            </div>
+        </section>
+        <header>
+            <p>
+                <span>&#139;</span>
+                <span>&#155;</span>
+            </p>
+        </header>
+    </main>
+    <!-- ==============================CATEGORIES TO BAG================ -->
+    <!-- == classnames were based on context of project == -->
+<div class="wrap">
+    <div class="timeline-wrap">
+      <h2 class="help-c">Categories Bag</h2>
+      <ul class="timeline">
+        <li class="timeline-item bmw" >
+          <div class="p-timeline-item" >
+            <div class="col-md-2">
+                <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/SareeS.png" style="border-bottom-right-radius: 50px;border-bottom-left-radius: 50px;">
+                    <h5>Sarees</h5>
+                </a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item mini">
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/kurtasets.png">
+                    <h5>Kurta Sets</h5>
+                </a>
+                </div>
+
+          </div>
+        </li>
+        <li class="timeline-item mini" >
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/kurtas.png">
+                    <h5>Kurtas</h5>
+                </a>
+                </div>
+
+          </div>
+        </li>
+        <li class="timeline-item bmw">
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/Plus_Size_Ankara_Styles.png">
+                    <h5>Plus Size Styles</h5>
+                </a>
+                </div>
+
+          </div>
+        </li>
+        <li class="timeline-item bmw" >
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/tops.png">
+                    <h5>Tops</h5>
+                </a>
+                </div>
+          </div>
+        </li>
+        <li class="timeline-item bmw">
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/Dresses-1.png">
+                    <h5>Dresses</h5>
+                </a>
+          </div>
+        </li>
+        <li class="timeline-item bmw" >
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/jewellery.png">
+                    <h5>Jewellerys</h5>
+                </a>
+                </div>
+
+          </div>
+        </li>
+        <li class="timeline-item mini">
+          <div class="p-timeline-item" >
+            <div class="category-part">
+                <a href="#"><img src="E-Commerce-Images/makeup.png">
+                    <h5>Beauty Products</h5>
+                </a>
+                </div>
+
+          </div>
+        </li>
+        <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/handbeg.png">
+                        <h5>HandBags</h5>
+                    </a>
+                </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/teens.png">
+                        <h5>Teens Wear</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/shirt.png">
+                        <h5>Shirts</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/t-shirt.png">
+                        <h5>T-Shirts</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/sports.png">
+                        <h5>Sports Shoes</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/jeans.png">
+                        <h5>Jeans</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/trouser.png">
+                        <h5>Trousers</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/casual-shoes.png">
+                        <h5>Casual Shoes</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/casualpants.png">
+                        <h5>Track Pants</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/ess.png">
+                        <h5>Path Essentials</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/trouser-1.png">
+                        <h5>Trousers</h5>
+                    </a>
+                    </div>
+    
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/watch-2.png">
+                        <h5>Watches</h5>
+                    </a>
+                </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/infant.png">
+                        <h5>Infant Essentials</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/flip.png">
+                        <h5>Flip Flops</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/shirt.short.png">
+                        <h5>T-Shirts & Shorts</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+          <li class="timeline-item mini">
+            <div class="p-timeline-item" >
+                <div class="category-part">
+                    <a href="#"><img src="E-Commerce-Images/b.png">
+                        <h5>Boot</h5>
+                    </a>
+                    </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+</div>
+    <!-- =============================Brands======================== -->
+    <div class="container-fluid">
+        <h3 class="text-center text-info">Deals On Top Brands</h3>
+        <section class="slider section">
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/adidas.png" alt=""><a href="#">Adidas</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/acrocs.png" alt=""><a href="#">Acrocs</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/biba.png" alt=""><a href="#">Biba</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/HRX.png" alt=""><a href="#">HRX</a></div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/libas.png" alt=""><a href="#">Libas</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/levi.png" alt=""><a href="#">Levi's</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/vero-moda.png" alt=""><a href="#">Vero
+                    Moda</a></div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/visudh.png" alt=""><a href="#">Visudh</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/puma.png" alt=""><a href="#">Puma</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/anouk.png" alt=""><a href="#">Anouk</a>
+            </div>
+            <div class="slide" data-aos="flip-up"><img src="E-Commerce-Images/only.png" alt=""><a href="#">Only</a>
+            </div>
+        </section>
+    </div>
+    <!-- =====================================Footer==================== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row" style="background: #1B6563;">
+                <div class="col-md-3 column">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="shipping.html">Cancellation & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>CONSUMER POLICY</h4>
+                    <ul>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Terms To Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 column">
+                    <h4>Registered Office Address:</h4>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <h4>Connect With Us</h4>
+                <a href="" id="icon"><i class="fa-brands fa-facebook fa-2xl" style="color: #1c65e3;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-instagram fa-2xl" style="color: #f64013;"></i></a>
+                <a href="" id="icon"><i class="fa-brands fa-twitter fa-2xl" style="color: #42f5c8;"></i></a>
+                <!-- <a href="" id="icon"></a> -->
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- =============slider================= -->
+    <script>
+        let span = document.getElementsByTagName('span');
+        let product = document.getElementsByClassName('product')
+        let product_page = Math.ceil(product.length / 4);
+        let l = 0;
+        let movePer = 25.34;
+        let maxMove = 203;
+        // mobile_view	
+        let mob_view = window.matchMedia("(max-width: 768px)");
+        if (mob_view.matches) {
+            movePer = 50.36;
+            maxMove = 504;
+        }
+
+        let right_mover = () => {
+            l = l + movePer;
+            if (product == 1) { l = 0; }
+            for (const i of product) {
+                if (l > maxMove) { l = l - movePer; }
+                i.style.left = '-' + l + '%';
+            }
+
+        }
+        let left_mover = () => {
+            l = l - movePer;
+            if (l <= 0) { l = 0; }
+            for (const i of product) {
+                if (product_page > 1) {
+                    i.style.left = '-' + l + '%';
+                }
+            }
+        }
+        span[1].onclick = () => { right_mover(); }
+        span[0].onclick = () => { left_mover(); }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<!-- ====================Categories bag===================== -->
+<script>
+    var item = '.timeline-item';
+    var content = '.p-timeline-content';
+    var active = 'i-is-active';
+    $('.timeline-item').on('click', function () { showTimelineContent(this); });
+    $('.close').on('click', function () { closeCurrentContent(this); });
+
+    function showTimelineContent(element) {
+        var itemId = $(element).find('.p-timeline-carmodel').attr('data-car');
+        var highlighted = $(element).find('.p-timeline-carmodel');
+        if ($(item).hasClass(active)) { $(item).removeClass(active); }
+        $(content).each(function () {
+            var contentid = $(this).attr('data-car');
+            if (itemId == contentid) {
+                var current = $(content + '[data-car="' + contentid + '"]');
+                $(current).addClass(active);
+                $(element).addClass(active);
+                $(content).not(current).removeClass(active);
+                var target = $(current);
+                $('html, body').stop().animate({ scrollTop: target.offset().top }, 1000);
+            }
+        });
+    }
+
+    function closeCurrentContent(event) {
+        var contentblock = $(event).parents(content);
+        var contentid = $(contentblock).attr('data-car');
+        $(item).each(function () {
+            var itemId = $(this).find('.p-timeline-carmodel').attr('data-car');
+
+            if (itemId == contentid) {
+                var target = $('.timeline-title');
+                $('html, body').stop().animate({ scrollTop: target.offset().top }, 1000); 
+                var currentItem = $(this).removeClass(active);
+                contentblock.removeClass(active);
+
+            }
+        });
+    }
+</script>
+</body>
+
+</html>
